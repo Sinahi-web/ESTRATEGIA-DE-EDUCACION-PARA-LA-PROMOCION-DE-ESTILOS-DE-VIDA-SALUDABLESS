@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'nobilebold_italic';
+    src: url('nobile-bolditalic-webfont.woff2') format('woff2'),
+         url('nobile-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*@font-face {
+    font-family: 'amaticbold';
+    src: url('amatic-bold-webfont.woff2') format('woff2'),
+         url('amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0E68C;
+    background: #212121 url(../img/DOC2.jpg);
+    color: black;
+}
+
+header {
+    background-color: #547EAD;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #69BFD7;
+    padding: 20px;
+    background-color: #D6F6F7;
+    max-width: 800px;
+}
+
+.sites {
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #69BFD7;
+    padding: 20px;
+    background-color: #D6F6F7;
+    max-width: 800px;
+}
+
+.sites ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sites ul li {
+    margin: 10px 0;
+}
+
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel input[type="radio"] {
+    display: none;
+}
+
+#img1:checked ~ .carousel-images {
+    transform: translateX(0);
+}
+
+#img2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+
+
+.carousel-nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-prev,
+.carousel-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

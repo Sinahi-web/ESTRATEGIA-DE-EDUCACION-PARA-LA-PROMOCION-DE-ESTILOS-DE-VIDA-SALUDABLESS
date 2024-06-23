@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('raleway-black-webfont.woff2') format('woff2'),
+         url('raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*=== 16 px = 12 pts = 100% = 1 em ====> esta es la medida estandar de laletra en paginas web y sus equivalencias en pixeles, puntos, porcentaje y ems*/
+
+body {
+	background: #212121  url(../img/DOC.jpg);
+	color: #FFF;
+	font-family: "intro_head_rbase", Helvetica, Verdana;
+	font-size: 2em;
+}
+
+
+h1{
+	color:#0E0D36;
+	margin: 0.25em auto;   /* esto utilizando el MODELO DE CAJAS */
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+}
+
+header {
+    background-color: #547EAD;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+section#contenedor{
+	background: #69BFD7; /*solo se utilizo este fondo blanto del contenedor para trabajar sus contenidos, como una guia, pero una vez trabajado esta de mas y se debe de eliminar*/
+	border-radius:0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0em;
+	text-align: center;
+}
+
+section#principal, aside {
+	background: #D6F6F7;
+    color: #04171D;
+	border-radius:0.5em;
+	display: inline-block; /*se comporta como un elemento en linea y todo lo que venga despues en bloque */
+	margin: 0.25em auto;
+	max-width: 960px; /*ancho maximo*/
+	min-height: 200px; /*altura minima dependera de la altura de nuestros contenidos*/
+	padding: 0.25em;
+	text-align: center;
+	vertical-align: top; /* alinia los elementos de manera vertical*/
+	width:65%;
+}
+
+article{
+	background: #D6F6F7;
+	border-radius:0.5em;
+	min-height: 140px;
+	padding: 0.25em;
+}
+
+aside{
+	width: 30%;
+}
